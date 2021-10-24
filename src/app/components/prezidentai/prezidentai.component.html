@@ -1,0 +1,10 @@
+<app-prezidentas
+  *ngFor="let p of prezidentai"
+  [prezidentas]="p"
+  (onFavoriteSelected)="pasirinktiMegstamiausiaPrezidenta(p)"
+>
+</app-prezidentas>
+
+<h2 *ngIf="megstamiausioPrezidentoVardas">
+  Mėgstamiausias prezidentas: {{megstamiausioPrezidentoVardas}}
+</h2>

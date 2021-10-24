@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li>Vardas: {{prezidentas?.vardas}}</li>
+    <li>Reitingas: {{prezidentas?.reitingas}}</li>
+  </ul>
+
+  <button (click)="prezidentas?.pridetiReitingo()">Pridėti reitingo</button>
+  <button (click)="prezidentas?.atimtiReitingo()">Atimti reitingo</button>
+  <button (click)="onFavoriteSelected.emit()">Pažymėti kaip mėgstamiausia</button>
+</div>
